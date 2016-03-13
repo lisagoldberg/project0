@@ -1,25 +1,41 @@
-var player = 1;
+var cells = ["cell0","cell1","cell2","cell3","cell4","cell5","cell6","cell7","cell8"]
 
-function startGame(square) {
-  if (player === 1){
-    document.getElementById(square).value = "x";
-    document.getElementById(square).disabled = "disabled";
-    player -=1;
-    winner();
-  } else {
-    document.getElementById(square).value = "o";
-    document.getElementById(square).disabled = "disabled";
-    player +=1;
-    winner();
-  };
 
-  };
 
-function winner () {
 
-  if (document.getElementById("cell0").value === "x" &&
-    document.getElementById("cell1").value === "x" &&
-    document.getElementById("cell2").value === "x")
+function startGame(){
+  document.turn = "Player X";
+
+  setMessage(document.turn + " gets to start.")
+}
+
+function setMessage(msg){
+document.getElementById("message").innerText=msg;)
+
+}
+
+
+function nextMove(square) {
+  if (square.innerText === ""){
+  square.innerText = document.turn;
+  switchTurn ();
+} else {
+  setMessage ("That square is already used.");
+}
+
+function switchTurn(){
+if (document.turn ==="x")
+  document.turn === "o"
+else
+  document.turn = "x"
+
+setMessage ("It's " document.turn + " turn.")
+
+}
+
+function clearTable(elementId)
+{
+  document.getElementById(elementId).innerHTML = "";
 }
 
 
@@ -34,6 +50,9 @@ function winner () {
 
 
 }
+
+
+
 
 
 
