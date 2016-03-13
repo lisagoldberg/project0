@@ -1,0 +1,40 @@
+.h1{
+  text-align: center;
+  font-family: verdana;
+  font-style: italic;
+
+}
+
+#table{
+  display:table;
+  border: 1px solid black;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square{
+width: 150px;
+height: 150px;
+border: 1px solid black;
+font-family: verdana;
+font-size: 60pt;
+color: pink;
+font-weight: bold;
+text-align: center;
+
+
+}
+
+
+.tr{
+
+}
+
+
+
+
+
+
