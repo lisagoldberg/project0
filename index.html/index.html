@@ -10,25 +10,25 @@
 </head>
 <body>
 
-<button onclick ="clearTable('square')" class="button" value="Reset Game" />
+<button type="button" class ="button">Reset Game</button>
 
 <h1 id="greeting" class="h1">Let's Play Tic-Tac-Toe!</h1>
 
 <table id ="board" class="table">
   <tr>
-    <td id="cell0" class="square"></td>
-    <td id="cell1" class="square"></td>
-    <td id="cell2" class="square"></td>
+    <td id="s1" class="square" onclick="nextMove(this)"></td>
+    <td id="s2" class="square" onclick="nextMove(this)"></td>
+    <td id="s3" class="square" onclick="nextMove(this)"></td>
   </tr>
   <tr>
-    <td id="cell3" class="square"></td>
-    <td id="cell4" class="square"></td>
-    <td id="cell5" class="square"></td>
+    <td id="s4" class="square" onclick="nextMove(this)"></td>
+    <td id="s5" class="square" onclick="nextMove(this)"></td>
+    <td id="s6" class="square"onclick="nextMove(this)"></td>
   </tr>
   <tr>
-    <td id="cell6" class="square"></td>
-    <td id="cell8" class="square"></td>
-    <td id="cell9" class="square"></td>
+    <td id="s7" class="square" onclick="nextMove(this)"></td>
+    <td id="s8" class="square" onclick="nextMove(this)"></td>
+    <td id="s9" class="square" onclick="nextMove(this)"></td>
   </tr>
 </table>
 
